@@ -1,0 +1,5 @@
+applications:
+  - name: demo-cf-log
+    instances: 1
+    path: target/demo-0.0.1-SNAPSHOT.jar
+    random-route: true
