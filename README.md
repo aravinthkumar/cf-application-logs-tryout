@@ -18,3 +18,5 @@ For instrumenting the logs to ELK above mentioned SAP CF Java logging is used wi
 Another component from SAP CF Java logging is included for request-filter to exhibit the `correlation-Id` for every HTTP Requests.
 
 For publishing the logs to ELK, [`STDOUT-JSON`](demo/src/main/resources/logback-spring.xml) with JSON encoder is used. But for local testing purpose the standard `STDOUT` can be switched from the spring [`application.properties`](demo/src/main/resources/application.properties) file.
+
+For logging and filtering, we use `Logger` & `Markers` from `SLF4J`.
